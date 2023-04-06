@@ -30,7 +30,10 @@ body {
 }
 
 .main-section {
-  background: no-repeat center url("../assets/images/Layer 34.png");
+  background: url(../assets/images/Layer\ 34.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-title {
@@ -87,7 +90,10 @@ body {
 
 
 .mobile-menu {
-  background: no-repeat center url("../assets/images/mobile-bg.jpg");
+  background: url(../assets/images/Layer\ 34.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   left: -150%;
   transform: translateX(-150%);
   transition: transform .3s ease;
