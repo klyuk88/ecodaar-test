@@ -1,0 +1,159 @@
+:root {
+  --accent-color: #e84545;
+  --accent-color-rgb: 232,69,69;
+  --hover-accent-color: #8e1f1f;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--accent-color);
+  --bs-btn-border-color: var(--accent-color);
+  --bs-btn-hover-bg: var(--hover-accent-color);
+  --bs-btn-hover-border-color: var(--hover-accent-color);
+  --bs-btn-active-bg: var(--hover-accent-color);
+  --bs-btn-active-border-color: var(--hover-accent-color);
+}
+
+.bg-primary {
+  background-color: rgba(var(--accent-color-rgb),var(--bs-bg-opacity))!important;
+}
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.header-logo {
+  width: 190px;
+}
+
+.main-section {
+  background: no-repeat center url("../assets/images/Layer 34.png");
+}
+
+.main-title {
+  font-weight: 400;
+  font-size: 65px;
+}
+
+.main-title-block {
+  padding: 150px 0;
+}
+
+.main-nav li a {
+  font-size: 13px;
+}
+
+.main-subtitle {
+  font-size: 22px;
+}
+
+
+
+.features {
+  padding: 120px 0;
+}
+
+.features-icon {
+  height: 60px;
+}
+
+.fs-7 {
+  font-size: 14px;
+}
+
+.work-item:hover .work-item-info {
+  opacity: 0.85;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transition: opacity .3s ease;
+}
+
+
+.work-item-info {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity .3s ease;
+}
+
+.burger-menu {
+  width: 35px;
+}
+
+
+.mobile-menu {
+  background: no-repeat center url("../assets/images/mobile-bg.jpg");
+  left: -150%;
+  transform: translateX(-150%);
+  transition: transform .3s ease;
+}
+
+.mobile-menu.active {
+  left: 0;
+  transform: translateX(0);
+  transition: transform .3s ease;
+}
+
+.mobile-menu {
+  z-index: 99;
+}
+
+
+.mobile-logo {
+  width: 130px;
+}
+
+.close-icon {
+  width: 25px;
+}
+.accent-hover {
+  transition: color .2s ease;
+}
+.accent-hover:hover {
+  color: var(--accent-color)!important;
+  transition: color .2s ease;
+}
+
+@media (min-width: 996px) {
+  .w-lg-75 {
+    width: 75%!important;
+  }
+}
+@media (min-width: 768px) {
+  .w-md-75 {
+    width: 75%!important;
+  }
+}
+
+
+@media (max-width: 996px) {
+  .main-title {
+    font-size: 45px;
+  }
+  .main-subtitle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .main-title {
+    font-size: 25px;
+  }
+  .main-title-block {
+    padding: 60px 0;
+  }
+  .header-logo {
+    width: 130px;
+  }
+  .features {
+    padding: 60px 0;
+  }
+
+  .features-icon {
+    height: 35px;
+  }
+}
